@@ -1,0 +1,54 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+[System.Serializable]
+public class ItemRegisterScript : MonoBehaviour
+{
+    //InputFieldを格納するための変数
+    InputField infItemName;
+    InputField infItemY;
+    InputField infItemM;
+    InputField infItemD;
+    InputField infItemND;
+
+    //取得したテキストを代入するための変数
+    public string ItemName;
+    public int ItemY;
+    public int ItemM;
+    public int ItemD;
+    public int ItemND;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //InputFieldコンポーネントを取得
+        infItemName = GameObject.Find("IFItemName").GetComponent<InputField>();
+        infItemY = GameObject.Find("IFItemYear").GetComponent<InputField>();
+        infItemM = GameObject.Find("IFItemMonth").GetComponent<InputField>();
+        infItemD = GameObject.Find("IFItemDay").GetComponent<InputField>();
+        infItemND = GameObject.Find("IFNotiDay").GetComponent<InputField>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void GetInformation()
+    {
+        //取得したテキストを代入
+        ItemName = infItemName.text;
+
+        //テキストを数値に変換して代入
+        ItemY = int.Parse(infItemY.text);
+        ItemM = int.Parse(infItemM.text);
+        ItemD = int.Parse(infItemD.text);
+        ItemND = int.Parse(infItemND.text);
+
+
+
+    }
+}

@@ -997,7 +997,7 @@ GameObject:
   - component: {fileID: 795733809}
   - component: {fileID: 795733808}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: IFItemYear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1067,13 +1067,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 795733809}
   m_TextComponent: {fileID: 97915174}
   m_Placeholder: {fileID: 207693963}
-  m_ContentType: 0
+  m_ContentType: 9
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -1596,7 +1596,7 @@ GameObject:
   - component: {fileID: 991540576}
   - component: {fileID: 991540575}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: IFItemDay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1666,13 +1666,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 991540576}
   m_TextComponent: {fileID: 944448229}
   m_Placeholder: {fileID: 10503292}
-  m_ContentType: 0
+  m_ContentType: 9
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -1776,7 +1776,7 @@ GameObject:
   - component: {fileID: 1056898233}
   - component: {fileID: 1056898232}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: IFItemMonth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1846,13 +1846,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1056898233}
   m_TextComponent: {fileID: 953190285}
   m_Placeholder: {fileID: 1643682802}
-  m_ContentType: 0
+  m_ContentType: 9
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2156,7 +2156,7 @@ GameObject:
   - component: {fileID: 1258179082}
   - component: {fileID: 1258179081}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: IFNotiDay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2226,13 +2226,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1258179082}
   m_TextComponent: {fileID: 2100206071}
   m_Placeholder: {fileID: 1634185507}
-  m_ContentType: 0
+  m_ContentType: 9
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2621,6 +2621,7 @@ GameObject:
   - component: {fileID: 1512462506}
   - component: {fileID: 1512462505}
   - component: {fileID: 1512462504}
+  - component: {fileID: 1512462508}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2715,6 +2716,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1512462508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512462503}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c1847ae23ecc44db0d3b1c5eab1c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1518776970
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,6 +3241,8 @@ GameObject:
   - component: {fileID: 1938576316}
   - component: {fileID: 1938576315}
   - component: {fileID: 1938576314}
+  - component: {fileID: 1938576317}
+  - component: {fileID: 1938576318}
   m_Layer: 5
   m_Name: RegisterButton
   m_TagString: Untagged
@@ -3298,7 +3313,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1938576315}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1938576317}
+        m_TargetAssemblyTypeName: ToListSceneScript, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1938576318}
+        m_TargetAssemblyTypeName: ItemRegisterScript, Assembly-CSharp
+        m_MethodName: GetInformation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1938576315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3337,6 +3376,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938576312}
   m_CullTransparentMesh: 1
+--- !u!114 &1938576317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938576312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b279d0750145f324792872da54c88cee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1938576318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938576312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c1847ae23ecc44db0d3b1c5eab1c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1985275590
 GameObject:
   m_ObjectHideFlags: 0
@@ -3350,7 +3413,7 @@ GameObject:
   - component: {fileID: 1985275593}
   - component: {fileID: 1985275592}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: IFItemName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
