@@ -403,7 +403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 90354425}
   m_Layer: 5
-  m_Name: NotificationDay (1)
+  m_Name: Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -424,7 +424,7 @@ RectTransform:
   - {fileID: 1583729964}
   - {fileID: 693496573}
   m_Father: {fileID: 1512462507}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -462,7 +462,7 @@ RectTransform:
   - {fileID: 74923942}
   - {fileID: 1258179080}
   m_Father: {fileID: 1512462507}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1035,7 +1035,7 @@ GameObject:
   - component: {fileID: 693496575}
   - component: {fileID: 693496574}
   m_Layer: 5
-  m_Name: IFNotiDay
+  m_Name: IFValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1836,7 +1836,7 @@ RectTransform:
   - {fileID: 706572022}
   - {fileID: 1985275591}
   m_Father: {fileID: 1512462507}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3122,11 +3122,11 @@ RectTransform:
   - {fileID: 1252804159}
   - {fileID: 1518776971}
   - {fileID: 1033963143}
+  - {fileID: 90354425}
   - {fileID: 946235308}
   - {fileID: 1529717928}
   - {fileID: 93184173}
   - {fileID: 1938576313}
-  - {fileID: 90354425}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3325,7 +3325,7 @@ RectTransform:
   - {fileID: 166610643}
   - {fileID: 939899687}
   m_Father: {fileID: 1512462507}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3762,7 +3762,7 @@ RectTransform:
   m_Children:
   - {fileID: 1148676642}
   m_Father: {fileID: 1512462507}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3923,6 +3923,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8231a12c0b4659b4c9a0a73419cce114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemDatasWrap:
+    itemData:
+      ItemName: 
+      ItemV: 0
+      ItemY: 0
+      ItemM: 0
+      ItemD: 0
+      ItemND: 0
 --- !u!1 &1985275590
 GameObject:
   m_ObjectHideFlags: 0

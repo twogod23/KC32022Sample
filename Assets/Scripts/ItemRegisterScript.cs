@@ -8,6 +8,7 @@ public class ItemRegisterScript : MonoBehaviour
 {
     //InputFieldを格納するための変数
     InputField infItemName;
+    InputField infItemV;
     InputField infItemY;
     InputField infItemM;
     InputField infItemD;
@@ -15,6 +16,7 @@ public class ItemRegisterScript : MonoBehaviour
 
     //取得したテキストを代入するための変数
     public static string ItemName;
+    public static int ItemV;
     public static int ItemY;
     public static int ItemM;
     public static int ItemD;
@@ -25,6 +27,7 @@ public class ItemRegisterScript : MonoBehaviour
     {
         //InputFieldコンポーネントを取得
         infItemName = GameObject.Find("IFItemName").GetComponent<InputField>();
+        infItemV = GameObject.Find("IFValue").GetComponent<InputField>();
         infItemY = GameObject.Find("IFItemYear").GetComponent<InputField>();
         infItemM = GameObject.Find("IFItemMonth").GetComponent<InputField>();
         infItemD = GameObject.Find("IFItemDay").GetComponent<InputField>();
@@ -43,6 +46,7 @@ public class ItemRegisterScript : MonoBehaviour
         ItemName = infItemName.text;
 
         //テキストを数値に変換して代入
+        ItemV = int.Parse(infItemV.text);
         ItemY = int.Parse(infItemY.text);
         ItemM = int.Parse(infItemM.text);
         ItemD = int.Parse(infItemD.text);
@@ -53,6 +57,10 @@ public class ItemRegisterScript : MonoBehaviour
     public static string RegIName()
     {
         return ItemName;
+    }
+    public static int RegIV()
+    {
+        return ItemV;
     }
     public static int RegIY()
     {
